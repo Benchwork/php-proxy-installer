@@ -25,6 +25,7 @@ function check_apache(){
 		if [[ $REPLY =~ ^[Yy]$ ]]; then
 			exit
 		else
+			echo "Apache2 is already installed and we are doing it anyway"
 		fi
 	fi
 }
