@@ -25,7 +25,7 @@ function check_apache(){
 		if [[ $REPLY =~ ^[Yy]$ ]]; then
 			exit
 		else
-		
+		fi
 	fi
 }
 
