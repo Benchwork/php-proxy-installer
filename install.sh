@@ -20,7 +20,13 @@ function check_apache(){
 	# check if directory exist
 	if [ -d /etc/apache2/ ]; then
 		echo "Apache2 is already installed on this system. This installation only works on fresh systems"
-		exit
+		read -p "Do you want to Abort? [Y/n] "
+		
+		if [[ $REPLY =~ ^[Yy]$ ]]; then
+			exit
+		else
+			
+		fi
 	fi
 }
 
@@ -38,6 +44,8 @@ function check_www(){
 		fi
 	fi
 }
+
+
 
 function install_cron(){
 
