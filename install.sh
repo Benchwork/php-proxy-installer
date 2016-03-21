@@ -15,6 +15,7 @@ CONF_FILE=/etc/apache2/sites-available/$SITE
 # Actual unique memory taken up by each is 2-5 MB. Factor in all the "shared memory", and the real average should be about 5 MB
 APACHE_PROCESS_MEM=5000
 
+
 function check_apache(){
 
 	# check if directory exist
